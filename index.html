@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg" style="background-size:cover;" >
+<center>
+    <div class="btn btn-primary head">
+    <h3 class="btn btn-danger heading" >Ping Pong AI Game</h3>
+    
+    <button class="btn btn-success bruh" data-toggle="modal" data-target="#mymodal">Instructions(инструкции)</button>
+</div>
+<br>
+<br>
+<button id="playbutton" onclick="game()" class="btn btn-warning bud">PLAY THE Game</button>
+<br><br><br>
+<h5 class="btn btn-info bud">Status-<span id="status" class="btn btn-info bud"></span></h5>
+<br><br><br><br>
+<div id="canvas"></div>
+<div id="game_console"></div>
+<h4 class="gme">SOURCE CODE(ИСХОДНЫЙ КОД)-<a href="https://teachablemachine.withgoogle.com">TEACHABLE MACHINE (обучаемая машина )</a></h4>
+
+
+<div id="mymodal" class="modal fade">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button class="close" data-dismiss="modal">X</button>
+    <h4>INSTRUCTIONS</h4>
+    <h4>ИНСТРУКЦИИ</h4>
+    </div>
+    <div class="modal-body">
+      <h4>MOVE YOU RIGHT WRIST UP AND DOWN TO CONTROL THE PADDLE,ALL THE BEST!</h4>
+      <H4>ПОДВИГАЙТЕ ВПРАВО ЗАПЯСТЬЯ ВВЕРХ И ВНИЗ, ЧТОБЫ УПРАВЛЯТЬ ВЕСЛОМ, ВСЕ САМОЕ ЛУЧШЕЕ!</H4>
+    </div>
+  </div>
+  </div>
+  </div>
+</center>
+
+        <script src="main.js"></script>
+    </body>
+</html>
